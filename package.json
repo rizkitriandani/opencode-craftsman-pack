@@ -1,0 +1,23 @@
+{
+  "name": "opencode-craftsman-pack",
+  "version": "1.0.0",
+  "description": "Pragmatic & Clean Code toolkit for OpenCode: Rubberducking, Socratic Understanding Gate (Unvibe), Consultant, and STAR Work Log (Notion Sync)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .opencode/scripts/notion-sync-star.cjs --dry-run"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "craftsmanship",
+    "rubberduck",
+    "unvibe",
+    "clean-code",
+    "pragmatic-programmer",
+    "star-method",
+    "notion"
+  ],
+  "author": "",
+  "license": "MIT"
+}
