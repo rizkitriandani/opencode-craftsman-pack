@@ -22,28 +22,29 @@
 Pilih salah satu metode berikut sesuai kebutuhan kamu:
 
 ### Metode 1: Plugin OpenCode (Direkomendasikan)
-Tambahkan ke dalam array `plugin` di file `opencode.json` (bisa di global `~/.config/opencode/opencode.json` atau per project):
+Tambahkan ke dalam array `plugin` di file `opencode.json` (bisa di global `~/.config/opencode/opencode.json` atau di level project):
 
 ```json
 {
   "plugin": [
-    "opencode-craftsman-pack@git+https://github.com/<username-kamu>/opencode-craftsman-pack.git"
+    "opencode-craftsman-pack@git+https://github.com/rizkitriandani/opencode-craftsman-pack.git"
   ]
 }
 ```
+*Setelah ditambahkan, restart OpenCode dan semua agents, commands, dan skills otomatis terpasang.*
 
-### Metode 2: 1-Line Installer Script
-Clone atau jalankan script install langsung ke konfigurasi global OpenCode kamu:
+### Metode 2: 1-Line Installer Script (Global CLI)
+Jalankan perintah ini langsung di terminal untuk memasang semua agent & command ke `~/.config/opencode/`:
 
 ```bash
-git clone https://github.com/<username-kamu>/opencode-craftsman-pack.git
-cd opencode-craftsman-pack
-./install.sh
+curl -fsSL https://raw.githubusercontent.com/rizkitriandani/opencode-craftsman-pack/main/install.sh | bash
 ```
 
-Atau via remote curl:
+Atau jika ingin clone manual:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<username-kamu>/opencode-craftsman-pack/main/install.sh | bash
+git clone https://github.com/rizkitriandani/opencode-craftsman-pack.git
+cd opencode-craftsman-pack
+./install.sh
 ```
 
 ### Metode 3: Portable per Project Repository
@@ -51,7 +52,7 @@ Cukup copy folder `.opencode/` dari repo ini ke root direktori project kamu dan 
 ```bash
 cp -r opencode-craftsman-pack/.opencode /path/to/your-project/
 ```
-Semua anggota tim yang membuka project dengan OpenCode akan langsung mendapatkan akses ke semua commands dan agents ini.
+Semua anggota tim yang membuka project dengan OpenCode akan langsung mendapatkan akses ke seluruh commands (`/duck`, `/unvibe`, `/log`, dll.) tanpa perlu install global.
 
 ---
 

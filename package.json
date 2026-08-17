@@ -4,6 +4,10 @@
   "description": "Pragmatic & Clean Code toolkit for OpenCode: Rubberducking, Socratic Understanding Gate (Unvibe), Consultant, and STAR Work Log (Notion Sync)",
   "type": "module",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkitriandani/opencode-craftsman-pack.git"
+  },
   "scripts": {
     "test": "node .opencode/scripts/notion-sync-star.cjs --dry-run"
   },
@@ -18,6 +22,6 @@
     "star-method",
     "notion"
   ],
-  "author": "",
+  "author": "rizkitriandani",
   "license": "MIT"
 }
